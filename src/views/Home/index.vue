@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia';
 import { useRouter } from "vue-router";
-import gsap from 'gsap'
 import { onMounted, reactive, ref, watch } from 'vue';
 import { useUserStore } from '@/stores/user';
 import type { Variables } from '@/types/variables';

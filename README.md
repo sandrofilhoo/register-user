@@ -1,55 +1,38 @@
-# front-register
 
-This template should help get you started developing with Vue 3 in Vite.
+# Front-Register
 
-## Recommended IDE Setup
+Uma aplicação frontend desenvolvida com Vue 3, TypeScript, Pinia, Moment, Axios, Vuetify 3 e Vuelidate.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+# Pré-requisitos e Configurações
+É necessário ter o Node.js instalado previamente.
+Para iniciar, configure o arquivo .env com as variáveis corretas:
 
 ```sh
-npm install
+VITE_API_URL="http://localhost:9999"
+```
+Para instalar as dependências, execute o comando:
+```sh
+npm run install
 ```
 
-### Compile and Hot-Reload for Development
+# Iniciar a aplicação
+Para iniciar a aplicação, utilize o comando:
 
 ```sh
 npm run dev
 ```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Headed Component Tests with [Cypress Component Testing](https://on.cypress.io/component)
+Se tudo estiver correto, você verá a seguinte mensagem indicando que a aplicação está funcionando:
 
 ```sh
-npm run test:unit:dev # or `npm run test:unit` for headless testing
-```
+$ vite
+Re-optimizing dependencies because lockfile has changed
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+  VITE v6.0.2  ready in 266 ms
 
-```sh
-npm run test:e2e:dev
-```
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  Vue DevTools: Open http://localhost:5173/__devtools__/ as a separate window
+  ➜  Vue DevTools: Press Option(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
+  ➜  press h + enter to show help
 ```
